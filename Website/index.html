@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" 
+          content="width=device-width, initial-scale=1.0" />
+    <title>Project</title>
+    <style>
+      .waving:before {
+  content: attr(data-hover);
+}
+
+.waving:hover {
+  animation-name: wave-animation;
+  animation-duration: 3.0s;
+  animation-iteration-count: infinite;
+  transform-origin: 70% 70%;
+}
+
+@keyframes wave-animation {
+  0% {
+      transform: rotate( 0.0deg)
+  }
+  10% {
+      transform: rotate(14.0deg)
+  }
+  20% {
+      transform: rotate(-8.0deg)
+  }
+  30% {
+      transform: rotate(14.0deg)
+  }
+  40% {
+      transform: rotate(-4.0deg)
+  }
+  50% {
+      transform: rotate(10.0deg)
+  }
+  60% {
+      transform: rotate( 0.0deg)
+  }
+  100% {
+      transform: rotate( 0.0deg)
+  }
+}
+      body {
+        padding: 10px;
+        background-color: white;
+        color: black;
+        font-size: 25px;
+      }
+      .dark-mode {
+        background-color: black;
+        color: white;
+      }
+      .light-mode {
+        background-color: white;
+        color: black;
+      }
+      .img {
+        height: 70px;
+        width: fit-content;
+        background-repeat: no-repeat;
+      }
+      body h2 {
+        text-align: center;
+      }
+     .ok{
+      text: shadow 55px;
+     }
+     .facebook {
+      list-style-image: url("Facebook.png");
+      list-style-position: inside;
+     }
+    </style>
+  </head>
+  <body>
+    <h1 align="center">Made By Bishwas..</h1>
+    <div class="waving" data-hover="😌">
+      Kaisa Laga(Make Your Movement Here)
+  </div>
+  
+  <div class="ok">
+    <h3 style="color:hsla(hue, saturation, lightness, alpha);">DarkMode ma xoye kalo batti balxa
+    </h3></div>
+      <h3>LightMode ma xoye seto batti bolxa</h3> 
+        <h1> I am Kinda <span style="color:rgb(255, 0, 0)">Magician</span>&#128514;</h1>
+      
+        <h1>Have <span style="color:rgb(121, 6, 236);">Faith</span> on Me Cuz I'm 
+          <span style="color:red"> Bishwas  &#128524;</span></h1>
+    </p>
+  
+    
+  
+    <h3 id="DarkModetext">Kunai Button Ma Touch Garnus...Hehe</h3>
+    <center><button onclick="darkMode()">Darkmode</button></center>
+   <center><button onclick="lightMode()">LightMode</button></center>
+    <script>
+      function darkMode() {
+        var element = document.body;
+        var content = document.getElementById("DarkModetext");
+        element.className = "dark-mode";
+        content.innerText = "Batti Off";
+      }
+      function lightMode() {
+        var element = document.body;
+        var content = document.getElementById("DarkModetext");
+        element.className = "light-mode";
+        content.innerText = "Batti On";
+      }
+    </script>
+    <br>
+    
+      <div class="facebook">
+    <center><a href="https://www.facebook.com/bishwaspandey06"> Follow Me</a></center>
+   
+  </body>
+</html>
